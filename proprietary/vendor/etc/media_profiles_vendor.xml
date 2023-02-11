@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2019 The Linux Foundation. All rights reserved.
+<!-- Copyright (C) 2012-2019, 2021 The Linux Foundation. All rights reserved.
      Not a contribution.
      Copyright (C) 2010 The Android Open Source Project
 
@@ -93,7 +93,7 @@
 <MediaSettings>
     <!-- Each camcorder profile defines a set of predefined configuration parameters -->
     <!-- Back Camera -->
-    <CamcorderProfiles cameraId="0" startOffsetMs="400" >
+    <CamcorderProfiles cameraId="0">
 
     <EncoderProfile quality="low" fileFormat="3gp" duration="30">
       <Video codec="h264"
@@ -180,56 +180,13 @@
              height="1080"
              frameRate="30" />
 
-<!-- wangbuqing@media ,20191219 ,[ITN-11823] change aac encoder maxBitRate from 156000 to 192000 -->
       <Audio codec="aac"
-             bitRate="192000"
+             bitRate="156000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
 
-    <!--khursheed.ali@imaging, 2020/03/19, HFR for Rear Main camera-->
-    <!-- VENDOR_EDIT add start -->
-    <EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="42000000"
-             width="1920"
-             height="1080"
-             frameRate="240" />
-
-      <Audio codec="aac"
-             bitRate="96000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-   <EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="42000000"
-             width="1920"
-             height="1080"
-             frameRate="240" />
-
-      <Audio codec="aac"
-             bitRate="96000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="42000000"
-             width="1920"
-             height="1080"
-             frameRate="240" />
-
-      <Audio codec="aac"
-             bitRate="96000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-    <!-- VENDOR_EDIT add end -->
-
-    <!--<EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
+    <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
       <Video codec="h264"
             bitRate="42000000"
             width="4096"
@@ -240,7 +197,7 @@
             bitRate="156000"
             sampleRate="48000"
             channels="2" />
-    </EncoderProfile>-->
+    </EncoderProfile>
 
     <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -408,7 +365,7 @@
              channels="2" />
     </EncoderProfile>
 
-   <!-- <EncoderProfile quality="timelapse4kdci" fileFormat="mp4" duration="30">
+    <EncoderProfile quality="timelapse4kdci" fileFormat="mp4" duration="30">
       <Video codec="h264"
             bitRate="42000000"
             width="4096"
@@ -419,7 +376,7 @@
             bitRate="156000"
             sampleRate="48000"
             channels="2" />
-    </EncoderProfile>-->
+    </EncoderProfile>
 
     <EncoderProfile quality="timelapse2160p" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -441,7 +398,7 @@
 
     </CamcorderProfiles>
     <!-- Front Camera -->
-    <CamcorderProfiles cameraId="1" startOffsetMs="400" >
+    <CamcorderProfiles cameraId="1">
 
     <EncoderProfile quality="low" fileFormat="3gp" duration="30">
       <Video codec="h264"
@@ -457,18 +414,11 @@
     </EncoderProfile>
 
     <EncoderProfile quality="high" fileFormat="mp4" duration="30">
-      <!-- Vendor Edit start -->
       <Video codec="h264"
-             bitRate="20000000"
-             width="1920"
-             height="1080"
-             frameRate="30" />
-      <!--<Video codec="h264"
              bitRate="42000000"
              width="3840"
              height="2160"
-             frameRate="30" />-->
-      <!-- Vendor Edit end -->
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="156000"
@@ -541,8 +491,7 @@
              channels="2" />
     </EncoderProfile>
 
-    <!-- Vendor Edit start -->
-    <!--<EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
+    <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
       <Video codec="h264"
             bitRate="42000000"
             width="4096"
@@ -563,8 +512,7 @@
             bitRate="156000"
             sampleRate="48000"
             channels="2" />
-    </EncoderProfile>-->
-    <!-- Vendor Edit end -->
+    </EncoderProfile>
     <EncoderProfile quality="qcif" fileFormat="3gp" duration="30">
       <Video codec="h264"
              bitRate="192000"
@@ -763,6 +711,19 @@
              channels="1" />
     </EncoderProfile>
 
+    <EncoderProfile quality="high" fileFormat="mp4" duration="30">
+      <Video codec="h264"
+             bitRate="42000000"
+             width="2560"
+             height="1440"
+             frameRate="30" />
+
+      <Audio codec="aac"
+             bitRate="156000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
     <EncoderProfile quality="qvga" fileFormat="mp4" duration="60">
       <Video codec="h264"
              bitRate="512000"
@@ -866,6 +827,20 @@
              bitRate="12200"
              sampleRate="8000"
              channels="1" />
+    </EncoderProfile>
+
+    <EncoderProfile quality="timelapsehigh" fileFormat="mp4" duration="30">
+      <Video codec="h264"
+             bitRate="42000000"
+             width="2560"
+             height="1440"
+             frameRate="30" />
+
+      <!-- audio setting is ignored -->
+      <Audio codec="aac"
+             bitRate="156000"
+             sampleRate="48000"
+             channels="2" />
     </EncoderProfile>
 
     <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
@@ -1932,9 +1907,8 @@
         maxHFRFrameWidth="0" maxHFRFrameHeight="0"
         maxHFRMode="0"  />
 
-<!-- wangbuqing@media ,20191219 ,[ITN-11823] change aac encoder maxBitRate from 96000 to 192000 -->
     <AudioEncoderCap name="aac" enabled="true"
-        minBitRate="8000" maxBitRate="192000"
+        minBitRate="8000" maxBitRate="96000"
         minSampleRate="8000" maxSampleRate="48000"
         minChannels="1" maxChannels="6" />
 

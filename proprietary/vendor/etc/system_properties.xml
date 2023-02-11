@@ -42,9 +42,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Bitmask for arb mode: 1: AVC, 2: HEVC, 4: MPEG2 -->
         <property name="vidc_dec_arb_mode_override" value="7"/>
         <property name="vidc_enc_quality_boost_enable" value="1"/>
-        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
-        <!-- Yugang.Ma@MULTIMEDIA.MEDIASERVER.PLAYER.964758, 2021/1/16, add for disable CAC-->
-        <!-- Enable CAC control: 0x0: disabled, 0x1:enabled for 8 bit, 0x2:enabled for 10 bit, 0x3:enabled for 8 and 10 bits both -->
-        <property name="vidc_enc_bitrate_savings_enable" value="0"/>
-        <!-- #endif OPLUS_BUG_COMPATIBILITY-->
 </configs>

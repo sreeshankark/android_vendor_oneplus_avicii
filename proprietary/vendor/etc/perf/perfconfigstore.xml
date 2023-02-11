@@ -33,7 +33,7 @@ ________________________________________________________________________________
 
                 <!--Vendor Properties -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
-                <Prop Name="vendor.iop.enable_uxe" Value="0" />
+                <Prop Name="vendor.iop.enable_uxe" Value="1" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
                 <Prop Name="vendor.iop.enable_prefetch_ofr" Value="0" />
                 <Prop Name="vendor.perf.iop_v3.enable" Value="false" />
@@ -64,16 +64,8 @@ ________________________________________________________________________________
                 <Prop Name="ro.lmk.direct_reclaim_pressure" Value="45" />
                 <Prop Name="ro.lmk.reclaim_scan_threshold" Value="0" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
-                <!--#ifndef  OPLUS_FEATURE_PERFORMANCE-->
-                <!--MoSiTing@ANDROID.PERFORMANCE, 2020/07/09, Modify for Increase cached app limit -->
-                <!--Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" /-->
-                <!--#else-->
-                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="128" />
-                <!--#endif /* OPLUS_FEATURE_PERFORMANCE */ -->
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
-                <!--#ifdef VENDOR_EDIT-->
-                <!--#chenxinfu@PSW.AD.Performance.na, 2020/07/09, Add bind the wlc to litti cores -->
-                <Prop Name="ro.vendor.qti.set_wlc_affinity" Value="true" />
-                <!--#endif -->
+
     </PerfConfigs>
 </PerfConfigsStore>

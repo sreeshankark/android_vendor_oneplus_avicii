@@ -978,8 +978,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/odm/vendor/firmware/gfp9558.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/gfp9558.b06 \
     vendor/oneplus/avicii/proprietary/odm/vendor/firmware/gfp9558.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/gfp9558.b07 \
     vendor/oneplus/avicii/proprietary/odm/vendor/firmware/gfp9558.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/gfp9558.mdt \
-    vendor/oneplus/avicii/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
-    vendor/oneplus/avicii/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/oneplus/avicii/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/oneplus/avicii/proprietary/vendor/bin/feature_enabler_client:$(TARGET_COPY_OUT_VENDOR)/bin/feature_enabler_client \
     vendor/oneplus/avicii/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \

@@ -576,9 +576,7 @@ PRODUCT_PACKAGES += \
     libC2D2 \
     libCB \
     libOpenCL \
-    libOpenCL_adreno \
     libVkLayer_q3dtools \
-    libadreno_app_profiles \
     libadreno_utils \
     libadsprpc \
     libbluetooth_audio_session_qti \
@@ -599,7 +597,6 @@ PRODUCT_PACKAGES += \
     libidl \
     libllvm-glnext \
     libllvm-qcom \
-    libllvm-qgl \
     libmdmdetect \
     libmdsprpc \
     libmmosal_vendor \
